@@ -5,6 +5,4 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\Auth\AuthController;
 
 
-Route::prefix("admin")->group(function(){
-
-});
+Route::post("register" , [AuthController::class , 'register']);
